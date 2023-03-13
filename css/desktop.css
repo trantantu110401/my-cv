@@ -1,0 +1,387 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+body {
+  font-family: "lato" sans-serif;
+  line-height: 1.8rem;
+  color: #868e96;
+}
+
+section > .container {
+  width: 1170px;
+  margin: auto;
+  display: block;
+
+  padding: 30px 50px;
+}
+
+#nav-bar {
+  text-align: center;
+}
+/* css banner */
+.img-banner {
+  position: relative;
+  background-image: url(/images/banner.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(50%);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.text-banner {
+  position: absolute;
+  top: 20%;
+  right: 40%;
+  font-size: 24px;
+  text-align: center;
+  color: #131212;
+}
+.text-banner h1 {
+  text-transform: uppercase;
+}
+.text-banner span {
+  color: #adb5bd;
+}
+/*navbar*/
+#nav-bar a:link,
+a:visited {
+  text-decoration: none;
+  color: #868e96;
+  border-left: 2px solid #dee2e6;
+  padding: 60px 20px 32px;
+}
+#nav-bar a:hover,
+a:active {
+  font-weight: bold;
+  cursor: grab;
+}
+.text-nav {
+  display: inline-block;
+  margin: 0px 40px;
+  color: black;
+}
+.icon {
+  color: #15aabf;
+  font-weight: bold;
+}
+.text-nav h1 {
+  font-size: 33px;
+}
+/*informationa*/
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  line-height: 2;
+  gap: 80px;
+  margin-top: 40px;
+}
+.section-title {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+#personal-info li span {
+  font-weight: bold;
+}
+.mt-40 {
+  margin-bottom: 30px;
+}
+#target {
+  padding: 70px;
+  padding-bottom: 90px;
+  border-radius: 35px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  background-color: #c5f6fa;
+}
+#info {
+  padding: 50px;
+  border-radius: 35px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  background-color: #c5f6fa;
+}
+/* ẩn thông tin của user
+ khi submit email */
+
+#info.section-content {
+  display: none !important;
+}
+
+/*job info*/
+
+.job-grid {
+  display: grid !important ;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+  row-gap: 20px;
+  align-items: flex-start;
+}
+.job-box-grid {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  column-gap: 30px;
+  row-gap: 30px;
+  border: 1px solid #ced4da;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  align-items: center;
+  padding: 24px;
+}
+.job-content {
+  grid-column: 1/-1;
+  margin: 20px;
+  line-height: 1.6;
+}
+.now {
+  background-color: #66d9e8;
+  border-radius: 10px;
+  padding: 2px 10px;
+  color: #f7f7f7;
+  text-align: center;
+}
+.list {
+  position: relative;
+}
+.list1 {
+  position: relative;
+}
+.job-node::before {
+  content: "•";
+  color: #15aabf;
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  left: -20px;
+}
+/* icon sở thích*/
+.icon-hobby {
+  width: 50px;
+  height: 50px;
+  border: #15aabf 2px solid;
+  color: #15aabf;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+/*GOOD BAD*/
+.good {
+  height: 3px;
+  width: 40px;
+  background-color: #66d9e8;
+  display: inline-block;
+  margin-right: 10px;
+}
+.bad {
+  height: 3px;
+  width: 40px;
+  background-color: #868e96;
+  display: inline-block;
+  margin-right: 10px;
+}
+/*chứng chỉ*/
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 50px;
+  row-gap: 50px;
+}
+.img-cc {
+  width: 240px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+  margin-right: 10px;
+}
+.cer-content {
+  display: flex;
+  gap: 13px;
+}
+.cer-content1 {
+  display: flex;
+  gap: 13px;
+  border-left: 1px Solid #d6c08d;
+  padding-left: 20px;
+}
+.cer-content2 {
+  display: flex;
+  gap: 13px;
+  border-top: 1px Solid#d6c08d;
+  padding-top: 40px;
+  grid-column: 1/-1;
+}
+/* project*/
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.project-flex {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+}
+.project-title {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 12px;
+  border: 1px solid #dee2e6;
+}
+.project-icon {
+  padding: 15px;
+  border-right: 1px solid #dee2e6;
+  border-left: 1px solid #dee2e6;
+  font-weight: bold;
+}
+.project-table {
+  border-collapse: collapse;
+}
+tr td:first-child {
+  width: 140px;
+  font-weight: bold;
+  padding: 30px;
+  vertical-align: top;
+}
+tr {
+  border: 1px solid #dee2e6;
+}
+/*footer*/
+#footer {
+  line-height: 1.5;
+  text-align: center;
+}
+#footer a:link,
+a:visited {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 40px;
+  text-decoration: none;
+}
+#footer a:hover,
+a:active {
+  cursor: grab;
+  color: #15aabf;
+}
+/*nâng cao*/
+/* .avt-default{
+  border-radius: 50%;
+  width:240px;
+  height:260px"
+  padding:10px;
+  background:color #f8f9fa;
+} */
+/* .avt-banner{
+  position:absolute;
+  display:inline-block
+  bottom:10px;
+  right:43%;
+  transform:translate(-5%,-40%) ;
+} */
+/* xu ly pham email 
+9. Chức năng ẩn thông tin cá nhân
+*/
+.ttcn {
+  display: none;
+}
+#error-email {
+  color: crimson;
+}
+
+/* 10. Chức năng ẩn thông tin nghề nghiệp  */
+.job-content {
+  display: none;
+}
+.view-more {
+  display: none;
+}
+
+.control-view {
+  display: none;
+}
+
+.view-hidden {
+  display: none;
+}
+.view-display {
+  display: inline-block;
+}
+.view-less-hidden {
+  display: none !important;
+}
+
+.view-less-display {
+  display: inline-block;
+}
+/* 11. (Nâng cao) Bổ sung Project Charter cho các dự án */
+.grid-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  color: #131212;
+}
+.item {
+  background-color: #c6c6c6;
+  border: 7px solid #034c96;
+}
+.item-3 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+.title {
+  border-bottom: #868e96 solid 3px;
+  margin: 30px;
+  color: #034c96;
+}
+/* // css phan goal */
+.goal-item {
+  display: flex;
+  font-size: 20px;
+  height: 1.5;
+  margin: 50px;
+}
+.goal-icon {
+  color: #15aabf;
+  margin-right: 60px;
+}
+/* phan cc cua item team */
+.team-item {
+  display: flex;
+  margin: 60px 20px;
+}
+/* css cua pham timeline */
+.timeline-item {
+  display: flex;
+  margin: 22px 5px;
+}
+.timeline-icon {
+  background-color: darkslateblue;
+  margin: 20px;
+  font-size: 30px;
+  padding: 8px;
+  border-radius: 100%;
+  color: #ced4da;
+}
+/* css cua phan scopes */
+.scopes-item {
+  display: flex;
+}
+.scopes-content {
+  margin-left: 20px;
+}
+/* css phan primary */
+.primary-icon {
+  background-color: darkslateblue;
+  margin: 20px;
+  font-size: 30px;
+  padding: 8px;
+  border-radius: 100%;
+  color: #ced4da;
+}
+.primary-item {
+  display: flex;
+}

@@ -1,0 +1,47 @@
+/* css for mobie */
+/* css nav-bar */
+@media (max-width: 768px) {
+  .text-nav {
+    display: none;
+  }
+  #nav-bar {
+    height: auto;
+    display: block;
+  }
+  #nav-bar a:link,
+  a:visited {
+    display: block;
+    padding: 10px;
+    border-left: none;
+    text-align: left;
+  }
+  /* css phần thông in cá nhân 
+  và mục tiêu nghề nghiệp */
+  #personal-info {
+    font-size: 15px;
+    padding-right: 20px;
+  }
+  /* css phần chứng chỉ  */
+  .cer-content1 {
+    border-left: 0;
+    border-top: 2px solid #d6c08d;
+    padding-top: 20px;
+  }
+  #footer a:link {
+    margin-right: 10px;
+  }
+  /* 11. (Nâng cao) Bổ sung Project Charter cho các dự án */
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .goal-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .scopes-item {
+    display: flex;
+    flex-direction: column;
+  }
+}

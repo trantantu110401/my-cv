@@ -1,0 +1,49 @@
+/* css for tablet
+css for navbar */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .text-nav {
+    display: none;
+  }
+  #nav-bar a:link,
+  a:visited {
+    padding: 10px;
+    margin-right: 1rem;
+    padding-bottom: 30px;
+  }
+  #nav-bar {
+    margin-top: 1rem;
+  }
+  /* css phần thông in cá nhân 
+  và mục tiêu nghề nghiệp */
+  #personal-info {
+    font-size: 15px;
+    padding-right: 40px;
+  }
+  /* css phần chứng chỉ  */
+  .cer-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  /* css cho phần dự án  */
+  .project-flex {
+    font-size: 10px;
+    padding: 10px 4px !important;
+  }
+  .grid-container {
+    flex-direction: column;
+  }
+  /* 11. (Nâng cao) Bổ sung Project Charter cho các dự án */
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .goal-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .scopes-item {
+    display: flex;
+    flex-direction: column;
+  }
+}
